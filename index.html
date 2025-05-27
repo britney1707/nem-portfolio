@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio britany</title>
+    <link rel="stylesheet" href="portfolioo.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="profil">
+            <img src="pinterest/diapora/UHUI6839.JPG" alt="mon profile">
+            <h1>Nemoko Temate Solemnia Britany</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="#" class="icone1"> <i class="fas fa-home"></i> Home </a></li>
+            <li><a href="#">Mes projets</a>
+                <ul class="submenu">
+                    <li> <a href="#">menu deroulant</a></li>
+                    <li><a href="#">pont blanc</a></li>
+                    <li><a href="#">formulaire </a></li>
+                    <li><a href="#">icones</a></li>
+                    <li><a href="#">photo grid</a></li>
+                </ul>
+            </li>
+            <li><a href="cv.html">Curriculum Vitae</a></li>
+            <li><a href="blog.html">Mon blog</a></li>
+        </ul>
+    </nav>
+    <section class="page">
+        <header>
+            <h1>je suis etudiante en informatique niveau1
+            a l'universite de douala
+            </h1>
+            <p>Durant mon annee academique j'ai pu apprendre plusieurs point sur la 
+              programmation web(html,css)et j'en apprends chaque jour d'avantage.
+               C'est plutot passionant malgrès qu'il  faut beaucoup de discipline
+              et de pratique.voici mon portfolio pour mieux comprendre mon 
+              avancer et decouvrir mes projets.
+            </p>
+            <button>contactez moi</button>
+        </header>
+        <section class="image">
+            <img src="pinterest/diapora/IMG_1650.JPG" alt="canva" width="100px" height="300px">
+        </section>
+
+        <section class="projet-section">
+            <h1>Les resumé de mes projects</h1>
+            <div class="projets">
+                <div class="project">
+                    <h4>Projet menu deroulant</h4>
+                    <p class="description">
+                      1. Utilse une balise nav pour contenir le menu.
+                        2.Cree une liste ul avec des elements li pour chaque lien.
+                        3.Pour le menu deroulant, imbrique une autre liste ul dans un
+                        li.4.En CSS cache la sous liste par defaut avec display none.
+                        5.Affiche-la au survol avec li:hover ul{ display:block;}
+                    </p>
+                    <p class="date">21th March</p>
+
+                </div>
+                <div class="project">
+                    <h4>projet texte sur une image</h4>
+                    <p class="description">
+                       1.Place l'image et le texte dans une meme div avec position:
+                       relative;. 2.Applique position:absolute; au texte pour le 
+                       positionner par-dessus l'image. 3.Utilise top,left,right ou 
+                       bottom pou placer precisement le texte. 4.Utilise color,font-size,
+                       background,etc pour styliser le texte. 5.Assure toi que l'image
+                       est bien visible avec width: 100%;.
+                    </p>
+                    <p class="date">12 th april</p>
+                </div>
+                <div class="project">
+                    <h4>projet photo grid</h4>
+                     <p class="description">
+                        1.Place toutes les images dans un div conteneur
+                        2.Applique display grid au conteneur pour activer la grille
+                        3.Utilise grid-template-columns: repeat(auto-fit,minmax
+                        (200px,1fr)); pour creer une grille responsive.
+                        4.Ajoute gap 10px pour espacer les images
+                        5.Utilise width 100% sur les images pour quelles s'adaptent 
+                    </p>
+                    <p class="date">25 th april</p>
+                </div>
+                <div class="project">
+                    <h4>projet section & aside</h4>
+                    <p class="description">
+                        1.Section serves a regrouper un ensemble coherent autour d'un theme 
+                        commun, comme un chapitre ou une partie article. 
+                        2.Aside est utiliser pour afficher du contenu complementaire oi
+                        secondaire, lié indirectement au contenu principal.
+                        3.Article represente un contenu autonome, reutilisable ou independant
+                    </p>
+                    <p class="date">1st may</p>
+                </div>
+                <div class="project">
+                    <h4>projet icones avec font-awesome</h4>
+                    <p class="description">
+                         1.Telecharge Font Awesome ou utilise CDN(en ligne) avec une 
+                         balise link dans le head.
+                         2.Cree un lien comme a href="" i class="fa fa-home" i Accueil a.
+                        3.Ajoute une classe css pour styliser le lien si besoin.
+                        4.Assure toi que la police Font Awesome est bien charger
+                        5.Personnalise la taille,couleur ou espacement avec CSS</p>
+                    <p class="date">10 th may</p>
+                </div>
+            </div>
+        </section>
+    </section>
+     <div class="formulaire">
+      <h1>inscrit toi </h1>   
+    <form action="traitement.php" metod="post">
+    <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom"placeholder=
+        "entrez votre nom" required> <br>
+
+
+    <label for="prenom">Prenom</label>
+        <input type="text" id="prenom" name="nom" placeholder="
+        entrez votre prenom" required><br>
+
+    <label>Sexe</label> 
+    <div class="radio">
+    <label>
+        <input type="radio" name="sexe" value="masculin" required>Masculin
+    </label>
+    <label>
+        <input type="radio" name="sexe" value="Feminin" required> Feminin
+    </label>
+    </div>
+
+
+    <label for="email">Email</label>
+        <input type="email" id="email" name="email"
+        placeholder="entrez votre email" required><br>
+
+    <label for="motdepasse">Mot de passe</label>
+        <input type="password" id="motdepasse" name="motdepasse" 
+        placeholder="pass word" required><br>
+
+    <label for="choix">Nationalité</label>
+        <select id="choix" name="choix">
+            <option value="option 1">Congolaise</option>
+            <option value="option 2">Camerounaise</option>
+            <option value="option 3">Gabonaise</option>
+        </select><br>
+
+
+    <label for="message">Plus d'info</label><br>
+        <textarea id="message" name="message"></textarea><br>
+
+        <button type="submit">ENVOYER</BUtton>
+
+
+    </form>
+    </div>
+
+    <footer>
+        <div class="autre">
+        <div class="colonne">
+            <h3>Autres services</h3>
+            <p> creation de logo</p>
+            <p>coiffure et esthetique</p>
+            <p>cours de repetition</p>
+        </div>
+        <div class="colonne">
+            <h3>mes adresse</h3>
+            <a href="#" class="icone1"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+            <a href="#" class="icone1"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" class="icone1"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><p>nemokobritany@gmail.com</p></a>
+        </div>
+        </div>
+        <p>&copy; copyright nemoko britany</p>
+    </footer>
+</body>
+</html>
